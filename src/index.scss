@@ -1,13 +1,144 @@
-body {
+@import "variables";
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  color: $brown-100;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 88px;
+  font-weight: 400;
+  color: $brown-100;
+  font-family: $font-family-chilanka;
+  letter-spacing: 2.64px;
+  text-transform: capitalize;
+}
+
+.goods-section,
+.best-selling-section,
+.blog-posts-section,
+.footer {
+  padding: 150px 310px;
+  font-family: $font-family-chilanka;
+}
+
+h2 {
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 0.55px;
+  text-transform: capitalize;
+}
+
+.pet-clothing-section,
+.pet-foodies-section,
+.best-selling-section {
+  padding-top: 150px;
+}
+
+.goods-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.goods-header button {
+  padding: 28px 50px;
+}
+
+.shop-btn {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid $brown-100;
+  background-color: white;
+  color: #41403e;
+  font-family: $font-family-chilanka;
+  font-size: 19px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.shop-btn i {
+  padding-left: 6px;
+}
+
+.footer {
+  padding: 150px 350px 30px 350px;
+}
+
+.circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 70px;
+  display: flex;
+}
+
+.gray-border {
+  border: 1px solid $gray-500;
+}
+
+.gold {
+  background-color: $gold;
+}
+
+.circle img {
+  margin: auto;
+}
+
+@media (max-width: 850px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .goods-section,
+  .best-selling-section,
+  .blog-posts-section,
+  .footer {
+    padding: 50px 20px;
+    font-family: $font-family-chilanka;
+  }
+
+  .pet-clothing-section,
+  .pet-foodies-section,
+  .best-selling-section {
+    padding-top: 80px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .goods-header button {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 851px) {
+  .mobile-only {
+    display: none !important;
+  }
 }

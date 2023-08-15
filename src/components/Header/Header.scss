@@ -1,0 +1,80 @@
+@import "../../variables";
+
+.header {
+    align-items: center;
+    max-width: 1300px;
+    margin: 28px auto;
+}
+
+.top-header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-family-montserrat;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+    color: $gray-300;
+    margin-bottom: 28px;
+}
+
+.waggy-logo-text {
+    font-family: $font-family-chilanka;
+    font-size: 35px;
+    letter-spacing: 1.05px;
+    text-transform: uppercase;
+    color: $brown-100;
+}
+
+.line {
+    border-top: 1px solid $gray-100;
+}
+
+.bottom-header-section {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+    font-family: $font-family-chilanka;
+}
+
+nav {
+    gap: 50px;
+    display: flex;
+    padding-left: 189px;
+    padding-right: 228px;
+}
+
+.nav-icons {
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    gap: 67px;
+    padding: 5px 0;
+}
+
+.contacts-container div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.contact {
+    font-family: $font-family-chilanka;
+    font-size: 19px;
+    color: $brown-100;
+}
+
+.nav-icons i {
+    display: flex;
+}
+
+@media (max-width: 850px) {
+    .top-header-section,
+    .bottom-header-section {
+        padding: 20px;
+    }
+}
