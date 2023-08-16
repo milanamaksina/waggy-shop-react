@@ -1,0 +1,29 @@
+@import "../../../../variables";
+
+.category-section {
+    margin: 150px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: auto;
+    row-gap: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family-chilanka;
+}
+
+.category-section p {
+    font-size: 26px;
+}
+
+.category-section img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 850px) {
+    .category-section {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5px;
+    }
+}

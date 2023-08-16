@@ -1,0 +1,104 @@
+@import "../../../../variables";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    row-gap: 45px;
+}
+
+.card-header {
+    border-radius: 10px;
+    height: 283px;
+    background: #eeebe5;
+}
+
+.dog-card {
+    padding: 0 20px;
+}
+
+.card-header img {
+    height: 100%;
+    width: 100%;
+}
+
+.goods-card-description i {
+    color: $gold;
+}
+
+.card-description-header {
+    padding-bottom: 4px;
+    font-size: 26px;
+}
+
+.price {
+    font-family: $font-family-montserrat;
+    font-size: 26px;
+    padding-top: 7px;
+    padding-bottom: 18px;
+    color: $gold;
+}
+
+.add-to-cart-btn {
+    padding: 20px 32px;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.card-buttons i {
+    color: black;
+    padding-left: 0;
+}
+
+.heart-btn {
+    padding: 20px;
+}
+
+.food-card {
+    padding: 40px 60px;
+}
+
+.rating {
+    font-size: 15px;
+    color: $gray-400;
+    font-family: $font-family-montserrat;
+    padding-left: 6px;
+}
+
+@media (max-width: 850px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        row-gap: 30px;
+    }
+
+    .add-to-cart-btn {
+        padding: 5px 10px;
+    }
+
+    .card-description-header {
+        font-size: 16px;
+    }
+
+    .card-header {
+        height: 200px;
+    }
+
+    .food-card {
+        padding: 15px 20px;
+    }
+
+    .dog-card {
+        padding: 0 10px;
+    }
+}

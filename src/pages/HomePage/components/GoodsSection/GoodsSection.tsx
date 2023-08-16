@@ -1,37 +1,39 @@
-import "./TopMainSection.scss";
+import "./GoodsSection.scss";
 import "../../../../index.scss";
-import dogPicture from "./assets/main-section-dog.png";
+import bird from "./assets/ph_bird.png";
+import bowl from "./assets/ph_bowl-food.png";
+import cat from "./assets/ph_cat.png";
+import dog from "./assets/ph_dog.png";
+import fish from "./assets/ph_fish.png";
 
-export const TopMainSection = () => {
+export const GoodsSection = () => {
   return (
     <>
-      <div className="main-section">
-        <div className="main-section-container">
-          <div className="main-section-header mobile-only">
-            <p className="sale-text">Save 10 - 20 % off</p>
-            <h1>
-              Best destination <br />
-              for<span> your pets</span>
-            </h1>
-          </div>
-          <div className="dog-img-container">
-            <img className="dog-img" src={dogPicture} />
-          </div>
-          <div className="main-section-header">
-            <p className="sale-text desktop-only">Save 10 - 20 % off</p>
-            <h1 className="desktop-only">
-              Best destination <br />
-              for<span> your pets</span>
-            </h1>
-            <button
-              className="btn btn-warning shop-btn center-btn"
-              type="reset"
-            >
-              <span>
-                Shop now
-                <i className="fa-solid fa-arrow-right"></i>
-              </span>
-            </button>
+      <div className="goods-section container">
+        <div className="category-section desktop-only">
+          <img src={bowl} />
+          <img src={bird} />
+          <img src={dog} />
+          <img src={fish} />
+          <img src={cat} />
+          <p>Accessories</p>
+          <p>Bird shop</p>
+          <p>Dog shop</p>
+          <p>Fish shop</p>
+          <p>Cat shop</p>
+        </div>
+        <div className="category-section mobile-only">
+          <img src={bowl} />
+          <img src={bird} />
+          <p>Accessories</p>
+          <p>Bird shop</p>
+          <img src={dog} />
+          <img src={fish} />
+          <p>Dog shop</p>
+          <p>Fish shop</p>
+          <div className="col-span-2">
+            <img src={cat} />
+            <p>Cat shop</p>
           </div>
         </div>
       </div>
