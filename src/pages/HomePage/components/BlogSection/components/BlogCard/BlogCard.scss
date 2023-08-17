@@ -1,0 +1,24 @@
+@import '../../../../../../variables';
+
+.blog-card-header {
+    font-size: 26px;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+    font-family: $font-family-chilanka;
+}
+
+.blog-description {
+    font-family: $font-family-montserrat;
+    font-size: 16px;
+    color: $gray-400;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.blog-img {
+    max-width: 420px;
+}

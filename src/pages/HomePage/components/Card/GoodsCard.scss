@@ -11,6 +11,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     row-gap: 45px;
+    margin-bottom: 150px;
 }
 
 .card-header {
@@ -35,6 +36,7 @@
 .card-description-header {
     padding-bottom: 4px;
     font-size: 26px;
+    font-family: $font-family-chilanka;
 }
 
 .price {

@@ -1,0 +1,75 @@
+@import '../../../../variables';
+
+.registration-section-container {
+    background-color: $beige-100;
+}
+
+.register-section {
+    display: flex;
+    flex-direction: row;
+    background-color: $beige-100;
+    font-family: $font-family-chilanka;
+    max-width: 1300px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.register-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 150px 122px 150px 62px;
+    text-align: center;
+}
+
+.register-header {
+    font-size: 55px;
+    letter-spacing: 0.55px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.register-header span {
+    color: $gold;
+}
+
+.register-form input {
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid rgba(65, 64, 62, 0.2);
+}
+
+.register-form input::placeholder {
+    font-size: 17px;
+    text-transform: capitalize;
+    font-family: $font-family-chilanka;
+}
+
+.register-btn {
+    padding: 28px 50px;
+    background-color: $brown-100;
+}
+
+.register-btn p {
+    font-size: 19px;
+    color: white;
+    text-transform: uppercase;
+    font-family: $font-family-chilanka;
+}
+
+.right-print {
+    padding: 418px 0 79px 0;
+}
+
+.left-print {
+    padding: 81px 0 382px 0;
+}
+
+
+@media (max-width: 850px) {
+    .register-form,
+    .register-section{
+        padding: 50px 20px;
+    }
+}

@@ -1,0 +1,59 @@
+@import '../../variables';
+
+.contact-icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 20px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.footer {
+  max-width: 1300px;
+  margin: 189px auto 100px auto;
+}
+
+.enter-email-input {
+    border-radius: 50px;
+    background-color: white;
+    padding: 11px 31px;
+}
+
+.enter-email::placeholder {
+    font-size: 15px;
+    font-family: $font-family-montserrat;
+    color: $gray-500;
+}
+
+.footer-menu {
+    font-size: 16px;
+    font-family: $font-family-montserrat;
+    color: $gray-400;
+}
+
+.credentials {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 850px) {
+    .contact-icons{
+        justify-content: center;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer .logo-container {
+        justify-content: center;
+    }
+
+    .credentials{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
